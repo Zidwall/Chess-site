@@ -1,0 +1,29 @@
+{% extends "layout1.html" %}
+
+{% block main %}
+            
+
+            <div class="div-center" style="margin-left: auto; margin-right: auto;">
+                <div id="board1" style="width: 500px"></div>
+            </div>
+            
+        </div>
+        <div class="div-center">
+                <button id="startGame" class="btn btn-success">Start Game</button>
+            </div>
+        <div class="clock div-center">
+                <time style="color: black; font-size: xx-large; background-color: white;" datetime="10:00" id="white_clock">10:00</time>
+                <time style="color: black; font-size: xx-large; background-color: white;" datetime="10:00" id="black_clock">10:00</time>
+        </div>
+        
+
+        <div class="div-center btns">
+            <button class="btn btn-primary" id="startBtn">Start Position</button>
+            <button class="btn btn-secondary" id="clearBtn">Clear Board</button>
+        </div>
+
+        <div class="div-center">
+            <button id="leave_game" class="btn-danger">Leave game</button>
+        </div>
+        
+{% endblock %}

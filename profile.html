@@ -1,0 +1,31 @@
+{% extends "layout1.html" %}
+
+
+{% block main %}
+
+    </div>
+    <h1 class="center" style="color: white">{{user_data["username"]}}</h1>
+    <br>
+    <div class="ranks">
+        {% for rank in ranks %}
+            <div class="card" style="width: 8rem; background-color: rgb(125, 110, 110);">
+                <br>
+                <div class="div-center div-center-vertical">
+                    <img src="static/img/{{rank}}.svg" height="90%" width="45%">
+                </div>
+                <div class="card-body">
+                    <p class="card-text center"><strong>{{rank}} : </strong></p>
+                    <p class="card-text center" style="font-size: x-large;"><strong>{{user_data[rank]}}</strong></p>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+    <br><br>
+    <div class="div-center">
+        <button id="loggingOut" class="btn btn-danger">Logging out</button>
+    </div>
+
+    
+
+{% endblock %}

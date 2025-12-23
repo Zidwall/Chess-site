@@ -1,0 +1,30 @@
+{% extends "layout2.html" %}
+
+{% block main %}
+
+    <br>
+    <div>
+        <h1 class="center">Se connecter</h1>
+    </div>
+    <div class="div-center">
+        <div class="coolinput">
+            <label for="input" class="text" >Password:</label>
+            <input style='width: 250px;' id="password" type="text" placeholder="Write here..." name="input" class="input field">
+        </div>
+    </div>
+
+    <div class="div-center">
+        <button class="btn btn-primary" id='btn' style="width: 250px;">Log in</button>
+    </div>
+
+    <div class="div-center">
+        <p id='message' class="message" hidden></p>
+    </div>
+    <div class="div-center">
+        <button class="btn btn-danger" id="back_btn">
+            <i data-lucide="chevron-left"></i>Back
+        </button>
+    </div>
+
+
+{% endblock %}

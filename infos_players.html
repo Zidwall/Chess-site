@@ -1,0 +1,25 @@
+{% extends "layout1.html" %}
+
+{% block main %}
+
+    </div>
+    <div class="div-center">
+        </strong><h1 style="color: white; font-size: xx-large;">Here you can find out the top chess players's data</h1><strong>
+    </div>
+    <div class="div-center">
+        <input placeholder="Enter the player's name" type="text" name="text" class="input" id="name">
+    </div>
+    <br>
+    <div class="div-center">        
+        <ul id="caracts" class="list_caracts">
+
+        </ul>
+    </div>
+    <div id='look_up' class="div-center">
+        <button id="submit" class="btn btn-success">Look up</button>
+    </div>
+    <div id='refresh' class="div-center" hidden>
+        <button id="refresh" class="btn btn-primary">refresh</button>
+    </div>
+    
+{% endblock %}

@@ -1,0 +1,43 @@
+{% extends "layout2.html" %}
+
+
+{% block main %}
+
+    <br>
+    <div>
+        <h1 class="center">S'inscrire</h1>
+    </div>
+
+    <div class="div-center">
+        <div class="coolinput">
+            <label for="input" class="text" >Username:</label>
+            <input style='width: 250px;' id="username" type="text" placeholder="Write here..." name="input" class="input field">
+        </div>
+    </div>
+
+    <div class="div-center">
+        <div class="coolinput">
+            <label for="input" class="text" >Password:</label>
+            <input style='width: 250px;' id="password" type="text" placeholder="Write here..." name="input" class="input field">
+        </div>
+    </div>
+
+    <div class="div-center">
+        <div class="coolinput">
+            <label for="input" class="text" >Confirm Password:</label>
+            <input style='width: 250px;' id="confirmation" type="text" placeholder="Write here..." name="input" class="input field">
+        </div>
+    </div>
+
+    <br>
+    <div class="div-center">
+        <button class="btn btn-primary" id='btn' style="width: 250px;">Register</button>
+    </div>
+
+    <div class="div-center">
+        <p style='color: red;font-size: x-large;'id="message" hidden></p>
+    </div>
+
+
+
+{% endblock %}

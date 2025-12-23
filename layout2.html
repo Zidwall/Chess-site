@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" href="static/css/layout.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>chess</title>
+    </head>
+    
+    <body style="background-color: #ffffff;" id="body">
+        <header>
+            <br><br>
+            <h1 class="display-1 center" style=" color: black">Chess</h1>
+        </header>
+        <main id="main">
+            <br><br>
+            <div id="menu-connection">
+                <a class="btn btn-light" href="/login">Se connecter</a>
+                <p>OU</p>
+                <a class="btn btn-light" href="/register">S'inscrire</a>
+            </div>
+
+            {% block main %}
+            
+            {% endblock %}
+        </main>
+        <footer id="footer">
+            <p style="color: black">©  <a href="https://maxime_sznajderman.cleverapps.io">Maxime Sznajderman</a> (2025)</p>
+        </footer>
+    </body>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="static/js/script_connection.js"></script>
+    <script>lucide.createIcons()</script>
+</html>

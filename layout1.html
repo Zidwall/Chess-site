@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <link rel="stylesheet" href="static/css/layout.css">
+        <link rel="stylesheet" href="static/css/chessboard-1.0.0.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        
+    </head>
+    
+    <body style="background-color: #1a1a1a ;" id="body">
+        <header>
+            <div id='header'>
+                <div class="logo">
+                    <a href="/"><img src="static/img/chesscom_logo_wordmark.png" style="height: 100%; width: 100%;"></a>
+                </div>
+                <button id='btn_menu' class="button type1">
+                    <span class="btn-txt" >Menu</span>
+                </button>
+            </div>
+        <br>
+        </header>
+        <main id="main">
+            <div style="display: flex">
+                <div hidden id="menu" style='color: white'>
+                    <button class="alert alert-primary tab" data-href='/profile' role="alert" style="width: 250px;">
+                        <i data-lucide="user"></i> Profile 
+                    </button>
+                    <button class="alert alert-primary tab" data-href='/' role="alert">
+                        <i data-lucide="gamepad-2"></i> Play
+                    </button>
+                    <button class="alert alert-primary tab" data-href='/infos_players' role="alert">
+                        <i data-lucide="layers-2"></i> infos players
+                    </button>
+                </div>
+            {% block main %}
+                
+            {% endblock %}
+        </main>
+        <footer id="footer">
+            <p style="color: white">©  <a href="https://maxime_sznajderman.cleverapps.io">Maxime Sznajderman</a> (2025)</p>
+        </footer>
+    </body>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="static/js/chessboard-1.0.0.js"></script>
+    <script src="static/js/script.js"></script>
+    <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        lucide.createIcons();
+    });
+    </script>
+</html>
